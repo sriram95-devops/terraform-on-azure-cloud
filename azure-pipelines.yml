@@ -31,7 +31,7 @@ stages:
     - task: CopyFiles@2
       inputs:
         SourceFolder: '$(System.DefaultWorkingDirectory)/terraform-manifests'
-        Contents: '**'
+        Contents: '**/32-Azure-IaC-DevOps/Git-Repo-Files/'
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
         OverWrite: true
     # List files from Build Artifact Staging Directory - After Copy
